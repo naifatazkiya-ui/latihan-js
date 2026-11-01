@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 4 - pola</title>
+</head>
+<body>
+
+    <h2>Segitiga sama sisi</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        
+       function segitigaSamaSisi() {
+    let hasil = "";
+
+    for (let i = 1; i <= 4; i++) {
+        for (let j = 1; j <= i; j++) {
+            hasil += i + " ";
+        }
+
+        hasil += "\n";
+    }
+
+    console.log(hasil);
+}
+
+segitigaSamaSisi();
+    
+    </script>
+
+</body>
+</html>

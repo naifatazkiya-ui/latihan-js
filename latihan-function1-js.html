@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 1 - function</title>
+</head>
+<body>
+
+    <h2>cetak fizzbuzz</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        
+        function fizzBuzz(n) {
+            let hasil = "";
+            for (let i = 1; i <= n; i++) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    hasil += "FizzBuzz\n";
+                } else if (i % 3 === 0) {
+                    hasil += "Fizz\n";
+                } else if (i % 5 === 0) {
+                    hasil += "Buzz\n";
+                } else {
+                    hasil += i + "\n";
+                }
+            }
+            console.log(hasil);
+        }
+        fizzBuzz(15);
+    </script>
+
+</html>

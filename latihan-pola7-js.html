@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 7- pola</title>
+</head>
+<body>
+
+</body>
+    <h2>segitiga jam pasir</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+
+        let n = 4;
+
+
+for (let i = n; i >= 1; i--) {
+    let hasil = "";
+
+    for (let j = 1; j <= n - i; j++) {
+        hasil += " ";
+    }
+
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        hasil += "* ";
+    }
+
+    console.log(hasil);
+}
+
+
+for (let i = 2; i <= n; i++) {
+    let hasil = "";
+
+    for (let j = 1; j <= n - i; j++) {
+        hasil += " ";
+    }
+
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        hasil += "* ";
+    }
+
+    console.log(hasil);
+}
+        
+
+    </script>
+
+</body>
+</html>

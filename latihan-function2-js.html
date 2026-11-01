@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 2 - function</title>
+
+</head>
+<body>
+
+    <h2>bilangan genap & ganjil</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        
+        function cekGenapGanjil(n) {
+            let hasil = "";
+            for (let i = 1; i <= n; i++) {
+                if (i % 2 === 0) {
+                    hasil += i + " adalah bilangan genap\n";
+                } else {
+                    hasil += i + " adalah bilangan ganjil\n";
+                }   
+            }
+            console.log(hasil);
+        }
+        
+        cekGenapGanjil(10);
+    
+    </script>
+
+</body>     
+</html>

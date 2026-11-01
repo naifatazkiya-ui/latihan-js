@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 2 - percabangan</title>
+</head>
+<body>
+
+    <h2>konversi kode peran (role)</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        
+        function konversiRole(kode) {
+            if (kode === "A") {
+                console.log("Admin");
+            } else if (kode === "U") {
+                console.log("User");
+            } else {
+                console.log("guest");
+            }
+        }
+
+    
+        konversiRole("A"); // Output: Admin
+        konversiRole("U"); // Output: User
+        konversiRole("G"); // Output: guest
+    </script>
+
+
+
+</body>
+</html>

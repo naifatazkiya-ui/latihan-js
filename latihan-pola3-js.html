@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 3 - pola</title>
+</head>
+<body>
+
+    <h2>pola persegi panjang kosong</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        
+        function cetakPersegiPanjangKosong(panjang, lebar) {
+            let hasil = "";
+            for (let i = 1; i <= lebar; i++) {
+                for (let j = 1; j <= panjang; j++) {
+                    // Cetak bintang hanya di bagian pinggir
+                    if (i === 1 || i === lebar || j === 1 || j === panjang) {
+                        hasil += "* ";
+                    } else {
+                        hasil += "  ";
+                    }
+                }
+                hasil += "\n";
+            }
+            console.log(hasil);
+        }
+        
+        cetakPersegiPanjangKosong(5, 3);
+    
+    </script>
+</html>

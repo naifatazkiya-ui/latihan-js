@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 1 - segitiga</title>
+</head>
+<body>
+
+    <h2>Segitiga</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        
+        function cetakSegitiga(n) {
+            let hasil = "";
+            for (let i = 1; i <= n; i++) {
+                for (let j = 1; j <= i; j++) {
+                    hasil += "* ";
+                }
+                hasil += "\n";
+            }
+            console.log(hasil);
+        }
+        
+        cetakSegitiga(5);
+    
+    </script>
+
+</body>     
+</html>

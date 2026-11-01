@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan soal 5 - pola</title>
+</head>
+<body>
+
+    <h2>Segitiga sama sisi 2</h2>
+    <p>Silakan buka <strong>Inspect Element -> Console</strong> untuk melihat hasilnya.</p>
+
+    <script>
+        let angka = 1;
+let tinggi = 4;
+
+for (let i = 1; i <= tinggi; i++) {
+    let baris = "";
+
+    for (let j = 1; j <= tinggi - i; j++) {
+        baris += " ";
+    }
+
+    for (let k = 1; k <= i; k++) {
+        baris += angka + " ";
+        angka++;
+    }
+
+    console.log(baris);
+}
+       
+         
+    </script>
+
+</body>
+</html>
